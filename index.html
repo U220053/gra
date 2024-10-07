@@ -32,7 +32,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;700;900&display=swap" rel="stylesheet"> -->
     <!-- Font Awesome CSS -->
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -242,30 +242,36 @@
 <!-- START SECTION BANNER -->
 <section class="mobile_vault_hero luxury_goods_bg" style="background-image: url(./image/greensun.png);">
   <div class="container h-100 d-flex justify-content-center align-items-center">
+    
+   
     <div class="row w-100">
       <div class="col-lg-7 col-md-8 col-sm-12 mobile_vault_hero-content text-center mx-auto" style="margin-top: -300px;">
         <h1 class="titleText" style="color: whitesmoke; display: flex; align-items: center;
-                    justify-content: center;
-                    background-image: linear-gradient(to bottom, #FFFFFF 30.72%, #999999 64.63%);
-                    -webkit-background-clip: text; color: transparent;">
-          Instant Liquidity on
-          <img src="./image/core.png" style="width: auto; height: 70px; margin-left: 10px;">
-        </h1>
+        justify-content: center;
+        background-image: linear-gradient(to bottom, #FFFFFF 30.72%, #999999 64.63%);
+        -webkit-background-clip: text; color: transparent;">
+Instant Liquidity on
+<img src="./image/core.png" style="width: auto; height: 70px; margin-left: 10px;">
+</h1>
         <p class="popins_fnt" style="text-align: center;">
           Grow your wealth with CoreUSD, Core’s native over-collateralized, yield-generating stablecoin
         </p>
         <div class="btn_group pb-3">
-          <button class="btn content-popup min_200" style="margin-top: 10px;" 
+          <!-- <button class="btn content-popup min_200" style="margin-top: 10px;" 
             onclick="window.open('', '_blank')">
             Mint CoreUSD ->
-          </button>
+          </button> -->
+          <div class="buttons">
+            <!-- <a href="https://discord.com" class="nitubtn" target="_blank">Discord</a> -->
+            <a href="https://twitter.com" class="nitubtn" target="_blank"> Mint CoreUSD -></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Custom Styles -->
+
 <style>
 /* Adjust the section's background image */
 .mobile_vault_hero {
@@ -273,12 +279,16 @@
   background-position: center -200px;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
+  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+  
+  
+ 
 /* Adjust margins for the hero content */
 .mobile_vault_hero-content {
   margin-top: 0;
@@ -288,8 +298,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  
 }
-
+.hero-text {
+  font-size: 4rem;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, #FFFFFF 30.72%, #999999 64.63%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  line-height: 1.2;
+}
 /* Center the button and its text */
 .btn_group {
   text-align: center; /* Center the button */
@@ -346,72 +367,80 @@
 </style>
 
     
-      
+    
       
       
     <!-- END SECTION BANNER -->
 
 
      <!-- START EXPLORE MORE -->
-  
-    <section class="explore_more" id="explore_more_id"   >
-      <div class="container-fluid">
-          <!-- <div class="row align-items-center justify-content-lg-end"> -->
-            <div class="row" style="align-items: center;">
-              <div class="col-lg-2 col-md-3 col-8 px-md-0">
-                  <p class="explore_more-label titleText" style="background-image: linear-gradient(to bottom, #FFFFFF 30.72%, #999999 64.63%);
-                  -webkit-background-clip: text;
-                    color: transparent; ">
-                    New Updates
-                  </p>
-                  <span class="explore_card_navs explore_card_navs-prev pr_20">
-                      <img class="wdth_50" src="./image/left_arrow.png" />
-                  </span>
-                  <span class="explore_card_navs explore_card_navs-next">
-                    <img class="wdth_50" src="./image/right_arrow.png" />
-                  </span>
-              </div>
-              <div class="col-lg-10 col-md-9 d-block px-0">
-                <style>        
+ 
+    <section class="explore_more" id="explore_more_id"  >
+    <div class="container-fluid">
+        <!-- <div class="row align-items-center justify-content-lg-end"> -->
+          <div class="row" style="align-items: center;">
+            <div class="col-lg-2 col-md-3 col-8 px-md-0">
+                <p class="explore_more-label titleText" style="background-image: linear-gradient(to bottom, #FFFFFF 30.72%, #999999 64.63%);
+                -webkit-background-clip: text;
+                  color: transparent; ">
+                  New Updates
+                </p>
+                <span class="explore_card_navs explore_card_navs-prev pr_20">
+                    <img class="wdth_50" src="./image/left_arrow.png" />
+                </span>
+                <span class="explore_card_navs explore_card_navs-next">
+                  <img class="wdth_50" src="./image/right_arrow.png" />
+                </span>
+            </div>
+            <div class="col-lg-10 col-md-9 d-block px-0">
+              <style>        
 
-                </style>
-                  <div class="swiper-container explore_cards_swiper" >
-                      <div class="swiper-wrapper" style="height: 200px;" >
-                        
-                        <a href="https://medium.com/rivera-money/announcing-riv-governance-token-for-rivera-protocol-640ad617d4c5" target="_blank" class="swiper-slide explore_cards-each text-dark">
-                          <div ><h4 class="titleText" style="color: whitesmoke;">Unveiling CoreUSD Ascend</h4></div>
-                          <p>In the vastness of the decentralized financial universe, ...</p>
-                          <div class="explore_more_pos" style="border: 1px soild red;">
-                            <div style="color: rgba(136, 226, 114, 1);">Read More</div>
-                            <div><img src="./image/oragneBlueHexagon.png" class="height_120" /></div>
-                          </div>
-                        </a>
-                        <a href="https://medium.com/rivera-money/riv-tokenomics-introduction-utility-allocation-96c5248a482b" target="_blank" class="swiper-slide explore_cards-each text-dark">
-                          <div><h4 class="titleText" style="color: whitesmoke;">Unveiling $EARTH Ascend</h4></div>
+              </style>
+                <div class="swiper-container explore_cards_swiper" >
+                    <div class="swiper-wrapper" style="height: 200px;" >
+                      
+                      <a href="https://medium.com/rivera-money/announcing-riv-governance-token-for-rivera-protocol-640ad617d4c5" target="_blank" class="swiper-slide explore_cards-each text-dark">
+                        <div ><h4 class="titleText" style="color: whitesmoke;">Unveiling CoreUSD Ascend</h4></div>
+                        <p>In the vastness of the decentralized financial universe, ...</p>
+                        <div class="explore_more_pos" style="border: 1px soild red;">
+                          <div style="color: rgba(136, 226, 114, 1);">Read More</div>
+                          <div><img src="./image/oragneBlueHexagon.png" class="height_120" /></div>
+                        </div>
+                      </a>
+                      <a href="https://medium.com/rivera-money/riv-tokenomics-introduction-utility-allocation-96c5248a482b" target="_blank" class="swiper-slide explore_cards-each text-dark">
+                        <div><h4 class="titleText" style="color: whitesmoke;">Unveiling $EARTH Ascend</h4></div>
+                        <p>In the vastness of the decentralized financial universe, ...</p>
+                        <div class="explore_more_pos">
+                          <div style="color: rgba(136, 226, 114, 1);">Read More</div>
+                          <div><img src="./image/GreenCoin.png" class="height_120" /></div>
+                        </div>
+                      </a>
+                        <a href="https://medium.com/rivera-money/rivera-liquidity-infrastructure-for-mantle-ab44ef2f39dc" target="_blank" class="swiper-slide explore_cards-each text-dark">
+                          <div><h4 class="titleText" style="color: whitesmoke;">Strategic partnership</h4> </div>
                           <p>In the vastness of the decentralized financial universe, ...</p>
                           <div class="explore_more_pos">
                             <div style="color: rgba(136, 226, 114, 1);">Read More</div>
-                            <div><img src="./image/GreenCoin.png" class="height_120" /></div>
+                            <div><img src="./image/GreenAtom.png" class="height_120" /></div>
                           </div>
                         </a>
-                          <a href="https://medium.com/rivera-money/rivera-liquidity-infrastructure-for-mantle-ab44ef2f39dc" target="_blank" class="swiper-slide explore_cards-each text-dark">
-                            <div><h4 class="titleText" style="color: whitesmoke;">Strategic partnership</h4> </div>
-                            <p>In the vastness of the decentralized financial universe, ...</p>
-                            <div class="explore_more_pos">
-                              <div style="color: rgba(136, 226, 114, 1);">Read More</div>
-                              <div><img src="./image/GreenAtom.png" class="height_120" /></div>
-                            </div>
-                          </a>
-                         
+                       
+                      
                         
-                          
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
 
+    @media (max-width: 768px) {
+  .explore_more {
+     margin-top: -200px;
+  }
+  
+}
+  </style>
 
 
     <!-- END EXPLORE MORE -->
@@ -423,8 +452,8 @@
                   <!-- Yaha apna image ka path daalo -->
                   <img src="./Percentage.png" alt="0% Interest Icon" class="per_img">
               </div>
-              <h2 class="titleText">0% Interest Rate</h2>
-              <p>Borrow $CUSD interest-free, with a 3.0% one-time fee paid over 3 months. Go shorter, pay less.</p>
+              <h2 class="titleText" >0% Interest Rate</h2>
+              <p style="text-align: center;">Borrow $CUSD interest-free, with a 3.0% one-time fee paid over 3 months. Go shorter, pay less.</p>
           </div>
           <div class="feature">
               <div>
@@ -432,7 +461,7 @@
                   <img src="./Rocket.png" alt="Productive Collateral Icon">
               </div>
               <h2 class="titleText">Productive Collateral</h2>
-              <p>Borrow against liquid staking tokens while still earning the underlying staking rewards.</p>
+              <p style="text-align: center;">Borrow against liquid staking tokens while still earning the underlying staking rewards.</p>
           </div>
           <div class="feature">
               <div>
@@ -440,7 +469,7 @@
                   <img src="./Cube.png" alt="Decentralisation Icon">
               </div>
               <h2 class="titleText">Decentralisation</h2>
-              <p>Support the decentralization of Bitcoin by borrowing against minority liquid staking tokens.</p>
+              <p style="text-align: center;">Support the decentralization of Bitcoin by borrowing against minority liquid staking tokens.</p>
           </div>
       </div>
   </section>
@@ -566,151 +595,48 @@
             </div>
      -->
             <!-- BLOGS start-->
-            <div class="custom-container">
+            <section>
+              <div class="custom-container">
                 <h1 class="titleText" style="display: flex; justify-content: center; color: whitesmoke; background-image: linear-gradient(to bottom, #FFFFFF 30.72%, #999999 64.63%); -webkit-background-clip: text; color: transparent;">
-                    Borrow $CoreUSD with Confidence
-                </h1>
-                <p class="popins_fnt" style="display: flex; justify-content: center; color: whitesmoke;">
-                    CoreUSD takes a security-first approach, ensuring that $CUSD is backed by robust mechanisms designed to maintain peg stability.
-                </p>
-            
-                <section class="infographic">
-                    <style>
-                        .infographic * {
-                            margin: 0;
-                            padding: 0;
-                            box-sizing: border-box;
-                        }
-            
-                        .infographic {
-                            font-family: 'Arial', sans-serif;
-                            background-color: black;
-                            padding: 50px;
-                            color: white;
-                        }
-            
-                        .infographic .container {
-                            display: grid;
-                            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                            gap: 30px; /* Gap between the cards */
-                            padding: 10px;
-                            max-width: 1200px;
-                            margin: 0 auto;
-                            text-align: center;
-                        }
-            
-                        .infographic .cardd {
-                            background-color: #1e1e1e;
-                            border: 2px solid;
-                            border-radius: 20px;
-                            padding: 20px;
-                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                            transition: transform 0.3s ease;
-                            position: relative;
-                            min-width: 280px;
-                            min-height: 200px;
-                            max-height: 330px;
-                            margin: 0 auto;
-                            justify-items: center;
-                        }
-            
-                        .infographic .cardd:hover {
-                            transform: scale(1.05);
-                        }
-            
-                        .infographic .icon {
-                            width: 80px;
-                            height: 80px;
-                            margin: 0 auto;
-                            position: absolute;
-                            top: -40px;
-                            left: 50%;
-                            transform: translateX(-50%);
-                        }
-            
-                        .infographic h2 {
-                            font-size: 1.5em;
-                            margin: 80px 0 10px; /* Spacing between title and image */
-                            color: white;
-                            text-align: left;
-                        }
-            
-                        .infographic p {
-                            font-size: 1em;
-                            color: #cccccc;
-                            margin-top: 20px;
-                            text-align: left;
-                        }
-            
-                        @media (max-width: 768px) {
-                            .infographic .container {
-                                grid-template-columns: 1fr;
-                            }
-            
-                            .infographic h2 {
-                                font-size: 1.2em;
-                            }
-            
-                            .infographic p {
-                                font-size: 0.9em;
-                            }
-                        }
-            
-                        @media (min-width: 769px) and (max-width: 1200px) {
-                            .infographic .container {
-                                grid-template-columns: repeat(2, 1fr);
-                            }
-                        }
-            
-                        /* Flexbox to handle responsiveness of bottom cards */
-                        .infographic .flex-container {
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: center;
-                            gap: 30px; /* Adjust gap for better spacing */
-                            margin-top: 60px;
-                        }
-            
-                        .infographic .flex-item {
-                            flex: 1 1 330px; /* Each card will take a minimum of 330px and grow */
-                            max-width: 330px;
-                            margin: 0 auto;
-                        }
-                    </style>
-            
-                    <div class="container">
-                        <div class="cardd">
-                            <img class="icon" src="./image/greenDoCoin.png" alt="Overcollateralized Icon">
-                            <h2>Overcollateralized</h2>
-                            <p>There’s more than a dollar’s worth of collateral backing every dollar of $CUSD</p>
-                        </div>
-                        <div class="cardd">
-                            <img class="icon" src="./image/Greensetting.png" alt="Recovery Mode Icon">
-                            <h2>Recovery Mode</h2>
-                            <p>Debt levels are monitored continuously and measures have been put in place to ensure it stays healthy</p>
-                        </div>
-                        <div class="cardd">
-                            <img class="icon" src="./image/GreenDollar.png" alt="Instant Liquidations Icon">
-                            <h2>Instant Liquidations</h2>
-                            <p>The Stability Pool handles liquidations, keeping a full dollar of collateral for every $CoreUSD.</p>
-                        </div>
-                    </div>
-            
-                    <!-- Responsive bottom section with Flexbox -->
-                    <div class="flex-container">
-                        <div class="cardd flex-item">
-                            <img class="icon" src="./image/DollarBtc.png" alt="Redemptions Icon">
-                            <h2>Redemptions</h2>
-                            <p>Exchange 1 $CUSD for USD 1 worth of underlying collateral at any time.</p>
-                        </div>
-                        <div class="cardd flex-item">
-                            <img class="icon" src="./image/mantoBtctoman.png" alt="Arbitrage Icon">
-                            <h2>Arbitrage</h2>
-                            <p>When $CoreUSD’s price fluctuates, the arbitrage opportunity incentivizes to keep price close to $1.</p>
-                        </div>
-                    </div>
-                </section>
+                  Borrow $CoreUSD with Confidence
+              </h1>
+              <p class="popins_fnt" style="display: flex; justify-content: center; color: whitesmoke;">
+                  CoreUSD takes a security-first approach, ensuring that $CUSD is backed by robust mechanisms designed to maintain peg stability.
+              </p>
+              <div class="marketMakingBox1" style="margin-bottom: 20px;">
+                <div class="marketMakingInnerBoxConcentrated grayy_bg ">
+                  <img src="./image/greenDoCoin.png" class="wdth_height_90 mb-3 mt-2">
+                  <div class="update_header_font mb-2 mt-3 fnt_600">DeFi Composable Positions</div>
+                  <div class="lh_1 marketMakingSubHeader mb-3 mt-3 fnt_wght_100">Unlock liquidity on your investment positions or invest in structured strategies.</div>
+                </div>
+                <div class="marketMakingInnerBoxConcentrated grayy_bg ">
+                  <img src="./image/Greensetting.png" class="wdth_height_90 mb-3 mt-2">
+                  <div class="update_header_font mb-2 mt-3 fnt_600">Passive LP Expereince</div>
+                  <div class="lh_1 marketMakingSubHeader mb-3 mt-3 fnt_wght_100">Liquidity ranges are managed for you, and the earnings are compounded.</div>
+                </div>
+                <div class="marketMakingInnerBoxConcentrated grayy_bg ">
+                  <img src="./image/GreenDollar.png" class="wdth_height_90 mb-3 mt-2">
+                  <div class="update_header_font mb-2 mt-3 fnt_600">Liquidity Mining Programs</div>
+                  <div class="lh_1 marketMakingSubHeader mb-3 mt-3 fnt_wght_100">Participate in liquidity mining programs and earn additional APY from rewards</div>
+                </div>
+                
+              </div>
+              <div class="marketMakingBox1">
+               
+                <div class="marketMakingInnerBoxConcentrated grayy_bg ">
+                  <img src="./image/DollarBtc.png" class="wdth_height_90 mb-3 mt-2">
+                  <div class="update_header_font mb-2 mt-3 fnt_600">Passive LP Expereince</div>
+                  <div class="lh_1 marketMakingSubHeader mb-3 mt-3 fnt_wght_100">Liquidity ranges are managed for you, and the earnings are compounded.</div>
+                </div>
+                <div class="marketMakingInnerBoxConcentrated grayy_bg">
+                  <img src="./image/mantoBtctoman.png" class="wdth_height_90 mb-3 mt-2">
+                  <div class="update_header_font mb-2 mt-3 fnt_600">Liquidity Mining Programs</div>
+                  <div class="lh_1 marketMakingSubHeader mb-3 mt-3 fnt_wght_100">Participate in liquidity mining programs and earn additional APY from rewards</div>
+                </div>
+                
+              </div>
             </div>
+            </section>
             
           
             <!-- BLOGS end-->
@@ -719,133 +645,131 @@
 
          
 
-          <section class="integration-with-dapps">
-            <h1 class="titleText" style="height: 50px; background-image: linear-gradient(to bottom, #FFFFFF 30.72%, #999999 64.63%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: 200; /* Text ko thoda bold dikhane ke liye */
-    font-size: 38px; /* Font size badhakar text ko chora dikhane ke liye */
-    "
->Integration with favourite dApps</h1>
-            <div class="card-container">
+            <section class="integration-with-dapps">
+              <h1 class="titleText" style="background-image: linear-gradient(to bottom, #FFFFFF 30.72%, #999999 64.63%);
+                  -webkit-background-clip: text;
+                  color: transparent;
+                  font-weight: 200; 
+                  font-size: 38px;">
+                Integration with favourite dApps
+              </h1>
+              <div class="card-container">
                 <div class="card">
-                    <div class="content-wrapper">
-                        <img src="./image/cx-corex.png" alt="COREX Logo">
-                        <div class="tag">DEX</div>
-                    </div>
-                    <p>Swap assets on Core with ease.</p>
+                  <div class="content-wrapper">
+                    <img src="./image/cx-corex.png" alt="COREX Logo">
+                    <div class="tag">DEX</div>
+                  </div>
+                  <p>Swap assets on Core with ease.</p>
                 </div>
                 <div class="card">
-                    <div class="content-wrapper">
-                        <img src="./image/colend.png" alt="COLEND Logo">
-                        <div class="tag">Lending</div>
-                    </div>
-                    <p>Swap assets on Core with ease.</p>
+                  <div class="content-wrapper">
+                    <img src="./image/colend.png" alt="COLEND Logo">
+                    <div class="tag">Lending</div>
+                  </div>
+                  <p>Swap assets on Core with ease.</p>
                 </div>
                 <div class="card">
-                    <div class="content-wrapper">
-                        <img src="./image/GLYPH.png" alt="GLYPH Logo">
-                        <div class="tag">dApps</div>
-                    </div>
-                    <p>Swap assets on Core with ease.</p>
+                  <div class="content-wrapper">
+                    <img src="./image/GLYPH.png" alt="GLYPH Logo">
+                    <div class="tag">dApps</div>
+                  </div>
+                  <p>Swap assets on Core with ease.</p>
                 </div>
                 <div class="card">
-                    <div class="content-wrapper">
-                        <img src="./image/icecream.png" alt="IceCreamSwap Logo">
-                        <div class="tag">DEX</div>
-                    </div>
-                    <p>Swap assets on Core with ease.</p>
+                  <div class="content-wrapper">
+                    <img src="./image/icecream.png" alt="IceCreamSwap Logo">
+                    <div class="tag">DEX</div>
+                  </div>
+                  <p>Swap assets on Core with ease.</p>
                 </div>
                 <div class="card">
-                    <div class="content-wrapper">
-                        <img src="./image/GLYPH.png" alt="GLYPH Logo">
-                        <div class="tag">dApps</div>
-                    </div>
-                    <p>Swap assets on Core with ease.</p>
+                  <div class="content-wrapper">
+                    <img src="./image/GLYPH.png" alt="GLYPH Logo">
+                    <div class="tag">dApps</div>
+                  </div>
+                  <p>Swap assets on Core with ease.</p>
                 </div>
                 <div class="card">
-                    <div class="content-wrapper">
-                        <img src="./image/cx-corex.png" alt="COREX Logo">
-                        <div class="tag">DEX</div>
-                    </div>
-                    <p>Swap assets on Core with ease.</p>
+                  <div class="content-wrapper">
+                    <img src="./image/cx-corex.png" alt="COREX Logo">
+                    <div class="tag">DEX</div>
+                  </div>
+                  <p>Swap assets on Core with ease.</p>
                 </div>
-            </div>
-            <style>
-              .integration-with-dapps {
+              </div>
+            
+              <style>
+                .integration-with-dapps {
                   text-align: center;
                   padding: 50px 20px;
-              }
-          
-              .integration-with-dapps h1 {
+                }
+            
+                .integration-with-dapps h1 {
                   font-size: 2rem;
                   margin-bottom: 40px;
-              }
-          
-              .card-container {
+                }
+            
+                .card-container {
                   display: grid;
                   grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
                   gap: 20px;
                   max-width: 1200px;
                   margin: 0 auto;
-              }
-          
-              .card {
-                  /* background-color: rgba(255, 255, 255, 0.099); */
+                }
+            
+                .card {
                   background: linear-gradient(90.4deg, rgba(255, 255, 255, 0.08) 2.61%, rgba(0, 0, 0, 0) 30.8%, rgba(0, 0, 0, 0.04) 74.28%, rgba(255, 255, 255, 0.08) 99.69%);
-
                   backdrop-filter: blur(71.3px);
                   padding: 20px;
-                  /* border-radius: 10px; */
-                  
-                
                   transition: transform 0.3s ease;
-              }
-          
-              /* .card:hover {
-                  transform: translateY(-10px);
-              } */
-          
-              .content-wrapper {
+                }
+            
+                .content-wrapper {
                   display: flex;
-                  justify-content: space-between; /* Distribute space between elements */
-                  align-items: center; /* Align image and tag vertically */
-              }
-          
-              .card img {
-                  width: 150px;  /* Increased width */
-                  height: 100px; /* Increased height */
+                  justify-content: space-between;
+                  align-items: center;
+                }
+            
+                .card img {
+                  width: 150px;
+                  height: 100px;
                   object-fit: contain;
-              }
-          
-              .tag {
+                }
+            
+                .tag {
                   background-color: #3a3a3a;
                   color: #00cc99;
                   padding: 5px 10px;
                   border-radius: 15px;
                   font-size: 0.9rem;
-              }
-          
-              p {
+                }
+            
+                p {
                   font-size: 0.9rem;
                   color: #ccc;
                   text-align: left;
-              }
-          
-              /* Responsive behavior for smaller screens */
-              @media (max-width: 768px) {
-                  .carddd-container {
-                      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+                }
+            
+                /* Responsive behavior for smaller screens */
+                @media (max-width: 1024px) {
+                  .card-container {
+                    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
                   }
-              }
-          
-              @media (max-width: 480px) {
-                  .carddd-container {
-                      grid-template-columns: 1fr; /* 1 column for small screens */
+                }
+            
+                @media (max-width: 768px) {
+                  .card-container {
+                    grid-template-columns: repeat(2, 1fr); /* 2 columns for small tablets */
                   }
-              }
-          </style>
-        </section>
+                }
+            
+                @media (max-width: 480px) {
+                  .card-container {
+                    grid-template-columns: 1fr; /* 1 column for mobile screens */
+                  }
+                }
+              </style>
+            </section>
 
         
     <div>
@@ -913,6 +837,12 @@
       background-repeat: no-repeat;
       background-size: cover; /* Ensures the image is fully visible without stretching */
     }
+    @media (max-width: 768px) {
+  .ProtocolTo {
+    display: none;
+  }
+  
+}
   </style>
   
   
@@ -934,7 +864,7 @@
         background-size:contain; /* Ensures the image is fully visible without stretching */
       }
     </style> -->
-    <div class="polymore">
+    <!-- <div class="polymore">
       <div class="rightglow">
       <div class="content">
         <h1 class="titleText" >Join Our Mission</h1>
@@ -1018,11 +948,146 @@
         
 
       }
-    </style>
+    </style> -->
     
+    <div class="polymore">
+      <div class="rightglow">
+        <div class="content">
+          <h1 class="titleText" style="background-image: linear-gradient(to bottom, #FFFFFF 30.72%, #999999 64.63%);
+          -webkit-background-clip: text;
+          color: transparent;
+          ">Join Our Mission</h1>
+          <p>Join our community to learn more & help improve the protocol.</p>
+          <div class="buttons">
+            <a href="https://discord.com" class="nitubtn" target="_blank">Discord</a>
+            <a href="https://twitter.com" class="nitubtn" target="_blank">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <style>
+      .polymore {
+        /* background-image: url("/api/placeholder/1920/1080"); */
+        background-image: url("geenMan.png"); /* Adjust to your correct path */
 
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 100px;
+        color: white;
+        text-align: left;
+        position: relative;
+      }
+    
+      .rightglow {
+        width: 600px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+      }
+    
+      .content {
+        max-width: 450px;
+        margin-top: -150px;
+      }
+    
+      .content h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+    
+      .content p {
+        font-size: 1.2em;
+        margin-bottom: 40px;
+      }
+    
+      .buttons {
+        display: flex;
+        gap: 20px;
+      }
+    
+      .nitubtn {
+        background-color: transparent;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        border: 1px solid white;
+      }
+    
+      .nitubtn:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .polymore {
+          background-size: cover;
+          background-position: center;
+          justify-content: center;
+          padding-right: 0;
+          text-align: center;
+        }
+    
+        .rightglow {
+          width: 100%;
+          padding: 0 20px;
+        }
+    
+        .content {
+          margin-top: 0;
+          padding: 20px;
+        }
+    
+        .content h1 {
+          font-size: 2em;
+        }
+    
+        .content p {
+          font-size: 1em;
+        }
+    
+        .buttons {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+    
+        .nitubtn {
+          font-size: 1em;
+          padding: 8px 16px;
+        }
+      }
+    
+      /* Additional adjustments for even smaller screens */
+      @media (max-width: 480px) {
+        .content h1 {
+          font-size: 1.75em;
+        }
+    
+        .buttons {
+          flex-direction: column;
+          gap: 10px;
+        }
+    
+        .nitubtn {
+          width: 100%;
+          max-width: 200px;
+          margin: 0 auto;
+        }
+      }
+    </style>
   
   
+      
+      
   
       
       
@@ -1265,58 +1330,202 @@
 
      
 
-  
-
+      <div class="faq-container">
+        <div class="faq-flex-container">
+          <div class="faq-header">
+            <h1>Explore our FAQ</h1>
+            <h1>for swift answers to </h1>
+            <h1>your questions.</h1>
+          </div>
+          
+          <div class="faq-content">
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this.parentElement)">
+                <h2>What is Earth Protocol?</h2>
+                <div class="toggle-btn">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>Earth Protocol is an innovative blockchain solution designed to revolutionize decentralized finance. It provides secure, efficient, and sustainable financial services while prioritizing environmental consciousness.</p>
+              </div>
+            </div>
+      
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this.parentElement)">
+                <h2>How can I benefit from using $CoreUSD?</h2>
+                <div class="toggle-btn">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>$CoreUSD offers stability, security, and seamless integration with the Earth Protocol ecosystem. Users can enjoy low transaction fees, fast settlements, and participate in various DeFi activities.</p>
+              </div>
+            </div>
+      
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this.parentElement)">
+                <h2>What is $CoreUSD?</h2>
+                <div class="toggle-btn">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>$CoreUSD is a stablecoin within the Earth Protocol ecosystem, designed to maintain a 1:1 peg with the US Dollar. It enables users to transact and store value with minimal volatility.</p>
+              </div>
+            </div>
+      
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleFAQ(this.parentElement)">
+                <h2>Do you have a token?</h2>
+                <div class="toggle-btn">+</div>
+              </div>
+              <div class="faq-answer">
+                <p>Yes, the Earth Protocol has its native token, $EARTH, which serves as the governance token for the protocol and enables holders to participate in decision-making processes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+        .faq-container {
+          /* max-width: 1200px; */
+          width: full;
+          margin: 0 auto;
+          padding: 40px 80px ;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          color: #ffffff;
+          background-color: #1a1a1a;
+        }
+      
+        .faq-flex-container {
+          display: flex;
+          gap: 60px;
+        }
+      
+        .faq-header {
+          flex: 1;
+          position: sticky;
+          top: 40px;
+          height: fit-content;
+        }
+      
+        .faq-header h1 {
+          font-size: 2.5rem;
+          margin-bottom: 10px;
+          line-height: 1.2;
+        }
+      
+        .faq-header p {
+          font-size: 1.2rem;
+          color: #888888;
+        }
+      
+        .faq-content {
+          flex: 1.5;
+        }
+      
+        .faq-item {
+          margin-bottom: 15px;
+        }
+      
+        .faq-question {
+          background-color: #2a2a2a;
+          padding: 20px;
+          border-radius: 8px;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: background-color 0.3s;
+        }
+      
+        .faq-question:hover {
+          background-color: #333333;
+        }
+      
+        .faq-question h2 {
+          margin: 0;
+          font-size: 1.1rem;
+          font-weight: 500;
+        }
+      
+        .toggle-btn {
+          width: 24px;
+          height: 24px;
+          background-color: #4CAF50;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 18px;
+          color: white;
+          transition: transform 0.3s;
+        }
+      
+        .faq-answer {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-out;
+          padding: 0 20px;
+        }
+      
+        .faq-item.active .faq-answer {
+          max-height: 500px;
+          padding: 20px;
+        }
+      
+        .faq-item.active .toggle-btn {
+          transform: rotate(45deg);
+        }
+      
+        @media (max-width: 968px) {
+          .faq-flex-container {
+            flex-direction: column;
+            gap: 30px;
+          }
+      
+          .faq-header {
+            text-align: center;
+          }
+      
+          .faq-header h1 {
+            font-size: 2rem;
+          }
+      
+          .faq-header p {
+            font-size: 1rem;
+          }
+        }
+      
+        @media (max-width: 480px) {
+          .faq-container {
+            padding: 20px 10px;
+          }
+      
+          .faq-header h1 {
+            font-size: 1.75rem;
+          }
+      
+          .faq-question h2 {
+            font-size: 1rem;
+          }
+        }
+      </style>
   
 
     <!-- START FOOTER SECTION -->
     <footer>
       <div class="top_footer bg_light_dark">
         <div class="custom-container-footer">
-          <div class="text-center contct_btn" style="margin-bottom: 40px;">
-            <img src="/assets/images/contactv2.png" class="cntc_wdth">
+          <div class="text-center style="margin-bottom: 40px;">
+            <img src="./assets/images/Earth.jpg" style="width: 200px; margin-bottom: 20px;">
           </div>
-          <div class="row" style="justify-content: space-between;    align-items: center;">
-            <div class="mb_20_mob">
-              <div class="footer_font mb-3">Subscribe to our Newsletter</div>
-              <div
-                class="footer_logo"
-              >
-
-              <form class="early_access_form" id="early_access_form_submit">
-                <div class="d-flex"> <input
-                  type="email"
-                  class="form-control bck_trans emailBoxWdth"
-                  id="early_access_mail"
-                  placeholder="Your Email"
-                  required
-                />
-                <button type="submit" name="submit2"  class="ftr_btn">
-                  Subscribe
-                </button></div>
-               <div id="subcription" style="color: #8AD86C;
-               margin-top: 18px;">
-                <img src="/assets/images/clickGreen.svg" style="    width: 27px;
-                margin-bottom: 2px;
-                margin-right: 2px;">
-                Thank you for subscribing.</div>
-              </form>
-
-              <!-- <a href="https://ethermail.io/community/rivera-money" target="_blank" class="page-scroll" >
-                <img alt="logo" src="assets/images/Newsletter.svg" style="width: 250px;"/>
-              </a>
-             -->
-                
-              </div>
-            </div>
+          <div class="row" style="justify-content: center;    align-items: center;">
+          
            
             <div class="mt_20_res">
               <div class="footer_logo">
-                <div class="footer_font mb-3">Join the community</div>
+              
                 <div>
                   <a href="https://rivera.gitbook.io/docs/" target="_blank" class="mr_10"> <img alt="medium" class="wdth_50" src="assets/images/gitbook_footer.png" /></a>
                   <a href="https://medium.com/rivera-money" target="_blank" class="mr_10"> <img alt="medium" class="wdth_50" src="assets/images/medium.webp" /></a>
-                  <a href="https://www.linkedin.com/company/rivera-money/" target="_blank"> <img alt="Linkedin" class="wdth_50" src="assets/images/linkedin.png" /></a>
+                  <!-- <a href="https://www.linkedin.com/company/rivera-money/" target="_blank"> <img alt="Linkedin" class="wdth_50" src="assets/images/linkedin.png" /></a> -->
                   <a href="https://twitter.com/Rivera_Money_" target="_blank" class="mr_10"> <img alt="Twitter" class="wdth_50" src="assets/images/twitter.png" /></a>
                   <a href="https://discord.com/invite/sbMxwS6VEV" target="_blank"> <img alt="Linkedin" class="wdth_50" src="assets/images/discord_footer.png" /></a>
                 </div>
@@ -1378,6 +1587,11 @@ aria-hidden="true">
     <!-- <a href="#" class="scrollup btn-default"><i class="ion-ios-arrow-up"></i></a> -->
 
     <!-- Latest jQuery -->
+    <script>
+      function toggleFAQ(element) {
+        element.classList.toggle('active');
+      }
+      </script>
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <!-- Latest compiled and minified Bootstrap -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

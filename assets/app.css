@@ -1,61 +1,65 @@
 @font-face {
-    font-family: "Subjectivity";
-    src: local("Subjectivity"), url(./utiles/Fonts/Subjectivity-Medium.otf);
-  }
-  @font-face {
-    font-family: "SubjectivityBold";
-    src: local("SubjectivityBold"), url(./utiles/Fonts/Subjectivity-Bold.otf);
-  }
-  .titleText{
-    font-family: "SubjectivityBold";
-  }
-  
+  font-family: "Subjectivity";
+  src: local("Subjectivity"), url(./utiles/Fonts/Subjectivity-Medium.otf);
+}
+@font-face {
+  font-family: "SubjectivityBold";
+  src: local("SubjectivityBold"), url(./utiles/Fonts/Subjectivity-Bold.otf);
+}
+.titleText {
+  font-family: "SubjectivityBold";
+}
 
-  .popins_fnt{
-    font-family: "Poppins";
-  }
-  .bgred{
-    background-color: red;
+.popins_fnt {
+  font-family: "Poppins";
+}
+.bgred {
+  background-color: red;
+}
+.brdr2w {
+  border: 1px solid white;
+}
+.brdr2b {
+  border: 1px solid black;
+}
 
-  }
-  .brdr2w{
-    border: 1px solid white;
-  }
-  .brdr2b{
-    border: 1px solid black;
+.line_text {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 4vh;
+  left: -1vh;
+}
 
+.line_aliment {
+  height: 1vh;
+  width: 81.5vw;
+  background-color: #8ad86c;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
 
+.line_aliment_inner {
+  height: 5vh;
+  width: 81.5vw;
+  /* border: 1px solid white; */
+  position: relative;
+  bottom: 2vh;
+  display: flex;
+  justify-content: space-around;
+}
+.line_aliment_inner_circle {
+  height: 4vh;
+  width: 2vw;
+  border-radius: 70%;
+  background-color: black;
+  border: 5px solid #8ad86c;
+}
+@media (max-width: 768px) {
+  .line_text {
+    display: none;
   }
-
-  .line_text{
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    bottom: 4vh;
-    left: -1vh;
+  .line_aliment {
+    display: none;
   }
-
-  .line_aliment{
-    height: 1vh;
-    width: 81.5vw;
-    background-color: #8AD86C;
-     margin-bottom: 30px;
-     border-radius: 3px;
-  }
-  
-  .line_aliment_inner{
-    height: 5vh;
-    width: 81.5vw;
-    /* border: 1px solid white; */
-    position: relative;
-    bottom: 2vh;
-    display: flex;
-    justify-content: space-around;
-  }
-  .line_aliment_inner_circle{
-   height: 4vh;
-   width: 2vw;
-   border-radius: 70%;
-   background-color: black;
-   border: 5px solid #8AD86C;
-  }
+}
