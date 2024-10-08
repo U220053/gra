@@ -294,19 +294,14 @@
     <section class="mobile_vault_hero luxury_goods_bg">
       <div class="container d-flex justify-content-center align-items-center">
         <div
-          class="row w-100 d-flex flex-column justify-content-between"
-          style="min-height: 80vh"
+          class="row w-100 d-flex flex-column justify-content-between nituminht"
         >
           <!-- <div
             class="col-lg-7 col-md-8 col-sm-12 mobile_vault_hero-content text-center mx-auto"
           > -->
           <div
-            style="
-              margin-top: 50px;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            "
+            class="nitumargin"
+            style="display: flex; flex-direction: column; align-items: center"
           >
             <h1
               class="titleText nituwidth1"
@@ -373,8 +368,11 @@
           <div class="container-fluid mt-auto" id="new-updates-section">
             <div class="blurred-background" id="blur-bg"></div>
 
-            <div class="row" style="align-items: center">
-              <div class="col-lg-2 col-md-3 col-8 px-md-0">
+            <div
+              class="row d-flex align-items-center"
+              style="flex-wrap: nowrap"
+            >
+              <div class="col-lg-2 col-md-3 col-8 px-md-0 col-sm-4 col-xs-4">
                 <p
                   class="explore_more-label titleText"
                   style="
@@ -397,7 +395,7 @@
                   <img class="wdth_50" src="./image/right_arrow.png" />
                 </span>
               </div>
-              <div class="col-lg-10 col-md-9 d-block px-0">
+              <div class="col-lg-10 col-md-9 d-block px-0 col-sm-8 col-xs-8">
                 <style></style>
                 <div class="swiper-container explore_cards_swiper">
                   <div class="swiper-wrapper" style="height: 200px">
@@ -502,7 +500,12 @@
 
     <style>
       /* Adjust the section's background image */
-
+      .nitumargin {
+        margin-top: 50px;
+      }
+      .nituminht {
+        min-height: 80vh;
+      }
       #new-updates-section {
         position: relative;
         overflow: hidden;
@@ -636,6 +639,9 @@
       }
 
       @media (max-width: 480px) {
+        .nituminht {
+          min-height: 0;
+        }
         .row {
           flex-direction: row;
         }
@@ -643,7 +649,7 @@
           font-size: 24px;
         }
         .mobile_vault_hero {
-          margin-top: 100px;
+          height: auto;
         }
         .mobile_vault_hero-content {
           margin-left: 0;
@@ -1228,7 +1234,7 @@
           .ProtocolTo {
             background-image: url("./iPhone\ 14\ &\ 15\ Pro\ -\ 1.png");
             background-size: contain;
-            height: 50vh;
+            height: 60vh;
           }
           .titleText {
             font-size: 2.5em; /* Adjust font size for mobile */
@@ -1248,6 +1254,11 @@
 
           .popins_fnt {
             font-size: 0.9em; /* Further adjust paragraph font size for smaller screens */
+          }
+        }
+        @media (max-width: 380px) {
+          .text-container {
+            margin-top: -120px;
           }
         }
       </style>
