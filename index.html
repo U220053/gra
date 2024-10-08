@@ -123,7 +123,7 @@
       });
     </script>
     <style>
-      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+      /* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800); */
 
       html,
       body {
@@ -291,20 +291,25 @@
 
     <!-- START SECTION BANNER -->
     <!-- START SECTION BANNER -->
-    <section
-      class="mobile_vault_hero luxury_goods_bg"
-      style="background-image: url(./image/greensun.png)"
-    >
-      <div
-        class="container h-100 d-flex justify-content-center align-items-center"
-      >
-        <div class="row w-100">
-          <div
+    <section class="mobile_vault_hero luxury_goods_bg">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div
+          class="row w-100 d-flex flex-column justify-content-between"
+          style="min-height: 80vh"
+        >
+          <!-- <div
             class="col-lg-7 col-md-8 col-sm-12 mobile_vault_hero-content text-center mx-auto"
-            style="margin-top: -300px"
+          > -->
+          <div
+            style="
+              margin-top: 50px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            "
           >
             <h1
-              class="titleText"
+              class="titleText nituwidth1"
               style="
                 color: whitesmoke;
                 display: flex;
@@ -317,43 +322,240 @@
                 );
                 -webkit-background-clip: text;
                 color: transparent;
+                /* margin: 0; Remove default margin */
               "
             >
               Instant Liquidity on
               <img
                 src="./image/core.png"
-                style="width: auto; height: 70px; margin-left: 10px"
+                class="nituht"
+                style="width: auto; margin-left: 10px"
               />
             </h1>
-            <p class="popins_fnt" style="text-align: center">
-              Grow your wealth with CoreUSD, Core’s native over-collateralized,
-              yield-generating stablecoin
-            </p>
-            <div class="btn_group pb-3">
-              <!-- <button class="btn content-popup min_200" style="margin-top: 10px;" 
-            onclick="window.open('', '_blank')">
-            Mint CoreUSD ->
-          </button> -->
-              <div class="buttons">
-                <!-- <a href="https://discord.com" class="nitubtn" target="_blank">Discord</a> -->
-                <a href="https://twitter.com" class="nitubtn" target="_blank">
-                  Mint CoreUSD -></a
+            <div class="nituwidth2" style="text-align: center">
+              <p class="popins_fnt" style="text-align: center">
+                <!-- Remove margin -->
+                Grow your wealth with CoreUSD, Core’s native
+                over-collateralized, yield-generating stablecoin
+              </p>
+            </div>
+
+            <div class="btn_group pb-3" style="text-align: center; width: 100%">
+              <!-- Center the buttons -->
+              <div
+                class="buttonnitu"
+                style="
+                  align-items: center;
+                  display: flex;
+                  justify-content: center;
+                "
+              >
+                <a
+                  href="https://twitter.com"
+                  class="nitubtn"
+                  target="_blank"
+                  style="
+                    background: linear-gradient(
+                      97.14deg,
+                      #88e272 38.47%,
+                      #c6ffb8 53.77%,
+                      #88e272 74.99%
+                    );
+                    color: #000;
+                  "
                 >
+                  Mint CoreUSD ->
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid mt-auto" id="new-updates-section">
+            <div class="blurred-background" id="blur-bg"></div>
+
+            <div class="row" style="align-items: center">
+              <div class="col-lg-2 col-md-3 col-8 px-md-0">
+                <p
+                  class="explore_more-label titleText"
+                  style="
+                    background-image: linear-gradient(
+                      to bottom,
+                      #ffffff 30.72%,
+                      #999999 64.63%
+                    );
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    font-size: 20px;
+                  "
+                >
+                  New Updates
+                </p>
+                <span class="explore_card_navs explore_card_navs-prev pr_20">
+                  <img class="wdth_50" src="./image/left_arrow.png" />
+                </span>
+                <span class="explore_card_navs explore_card_navs-next">
+                  <img class="wdth_50" src="./image/right_arrow.png" />
+                </span>
+              </div>
+              <div class="col-lg-10 col-md-9 d-block px-0">
+                <style></style>
+                <div class="swiper-container explore_cards_swiper">
+                  <div class="swiper-wrapper" style="height: 200px">
+                    <a
+                      href="https://medium.com/rivera-money/announcing-riv-governance-token-for-rivera-protocol-640ad617d4c5"
+                      target="_blank"
+                      class="swiper-slide explore_cards-each text-dark"
+                      style="
+                        padding: 20px 0px 20px 20px;
+                        border: #999999;
+                        border-color: #999999;
+                        border: solid #999999; /* Add border here */
+                      "
+                    >
+                      <div>
+                        <h4 class="nitfont" style="color: whitesmoke">
+                          Unveiling CoreUSD Ascend
+                        </h4>
+                      </div>
+                      <p>
+                        In the vastness of the decentralized financial universe,
+                        ...
+                      </p>
+                      <div
+                        class="explore_more_pos"
+                        style="border: 1px soild red"
+                      >
+                        <div style="color: rgba(136, 226, 114, 1)">
+                          Read More
+                        </div>
+                        <div>
+                          <img
+                            src="./image/oragneBlueHexagon.png"
+                            class="height_120"
+                          />
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="https://medium.com/rivera-money/riv-tokenomics-introduction-utility-allocation-96c5248a482b"
+                      target="_blank"
+                      class="swiper-slide explore_cards-each text-dark"
+                      style="
+                        padding: 20px 0px 20px 20px;
+                        border: solid #999999; /* Add border here */
+                      "
+                    >
+                      <div>
+                        <h4 class="" style="color: whitesmoke">
+                          Unveiling $EARTH Ascend
+                        </h4>
+                      </div>
+                      <p>
+                        In the vastness of the decentralized financial universe,
+                        ...
+                      </p>
+                      <div class="explore_more_pos">
+                        <div style="color: rgba(136, 226, 114, 1)">
+                          Read More
+                        </div>
+                        <div>
+                          <img src="./image/GreenCoin.png" class="height_120" />
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="https://medium.com/rivera-money/rivera-liquidity-infrastructure-for-mantle-ab44ef2f39dc"
+                      target="_blank"
+                      class="swiper-slide explore_cards-each text-dark"
+                      style="
+                        padding: 20px 0px 20px 20px;
+                        border: solid #999999; /* Add border here */
+                      "
+                    >
+                      <div>
+                        <h4 class="" style="color: whitesmoke">
+                          Strategic partnership
+                        </h4>
+                      </div>
+                      <p>
+                        In the vastness of the decentralized financial universe,
+                        ...
+                      </p>
+                      <div class="explore_more_pos">
+                        <div style="color: rgba(136, 226, 114, 1)">
+                          Read More
+                        </div>
+                        <div>
+                          <img src="./image/GreenAtom.png" class="height_120" />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- <div class="blurred-background"></div> -->
     </section>
 
     <style>
       /* Adjust the section's background image */
+
+      #new-updates-section {
+        position: relative;
+        overflow: hidden;
+      }
+      #new-updates-section .row {
+        position: relative;
+        z-index: 1;
+      }
+      .explore_more-label {
+        background-image: linear-gradient(
+          to bottom,
+          #ffffff 30.72%,
+          #999999 64.63%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 20px;
+      }
+      .blurred-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        z-index: 0;
+      }
+
+      .container-fluid {
+        position: relative;
+        z-index: 1; /* Ensure content stays above the background */
+      }
+      .nituwidth1 {
+        width: 990px;
+        margin-bottom: 30px;
+      }
+      .nituwidth2 {
+        width: 722px;
+        margin-bottom: 50px;
+      }
+      .nituht {
+        height: 70px;
+      }
       .mobile_vault_hero {
         background-image: url(./image/greensun.png);
-        background-position: center -200px;
+        background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
+        background-size: contain;
+
+        height: 80vh;
         /* min-height: 100vh; */
         display: flex;
         align-items: center;
@@ -400,6 +602,21 @@
 
       /* Responsive styles */
       @media (max-width: 1200px) {
+        .explore_more-label {
+          margin-left: -80px;
+        }
+
+        .nituwidth1 {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .nituwidth2 {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .nituht {
+          height: 50px;
+        }
         .mobile_vault_hero-content {
           margin-left: 0;
         }
@@ -409,6 +626,8 @@
         .mobile_vault_hero-content {
           margin-left: 0;
           text-align: center;
+          background-image: url(./greensunmbl.png);
+          background-position: center;
         }
         .titleText {
           flex-direction: column;
@@ -417,6 +636,15 @@
       }
 
       @media (max-width: 480px) {
+        .row {
+          flex-direction: row;
+        }
+        .nitfont {
+          font-size: 24px;
+        }
+        .mobile_vault_hero {
+          margin-top: 100px;
+        }
         .mobile_vault_hero-content {
           margin-left: 0;
           text-align: center;
@@ -443,106 +671,6 @@
 
     <!-- START EXPLORE MORE -->
 
-    <section class="explore_more" id="explore_more_id">
-      <div class="container-fluid">
-        <!-- <div class="row align-items-center justify-content-lg-end"> -->
-        <div class="row" style="align-items: center">
-          <div class="col-lg-2 col-md-3 col-8 px-md-0">
-            <p
-              class="explore_more-label titleText"
-              style="
-                background-image: linear-gradient(
-                  to bottom,
-                  #ffffff 30.72%,
-                  #999999 64.63%
-                );
-                -webkit-background-clip: text;
-                color: transparent;
-                font-size: 38px;
-              "
-            >
-              New Updates
-            </p>
-            <span class="explore_card_navs explore_card_navs-prev pr_20">
-              <img class="wdth_50" src="./image/left_arrow.png" />
-            </span>
-            <span class="explore_card_navs explore_card_navs-next">
-              <img class="wdth_50" src="./image/right_arrow.png" />
-            </span>
-          </div>
-          <div class="col-lg-10 col-md-9 d-block px-0">
-            <style></style>
-            <div class="swiper-container explore_cards_swiper">
-              <div class="swiper-wrapper" style="height: 200px">
-                <a
-                  href="https://medium.com/rivera-money/announcing-riv-governance-token-for-rivera-protocol-640ad617d4c5"
-                  target="_blank"
-                  class="swiper-slide explore_cards-each text-dark"
-                >
-                  <div>
-                    <h4 class="titleText" style="color: whitesmoke">
-                      Unveiling CoreUSD Ascend
-                    </h4>
-                  </div>
-                  <p>
-                    In the vastness of the decentralized financial universe, ...
-                  </p>
-                  <div class="explore_more_pos" style="border: 1px soild red">
-                    <div style="color: rgba(136, 226, 114, 1)">Read More</div>
-                    <div>
-                      <img
-                        src="./image/oragneBlueHexagon.png"
-                        class="height_120"
-                      />
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href="https://medium.com/rivera-money/riv-tokenomics-introduction-utility-allocation-96c5248a482b"
-                  target="_blank"
-                  class="swiper-slide explore_cards-each text-dark"
-                >
-                  <div>
-                    <h4 class="titleText" style="color: whitesmoke">
-                      Unveiling $EARTH Ascend
-                    </h4>
-                  </div>
-                  <p>
-                    In the vastness of the decentralized financial universe, ...
-                  </p>
-                  <div class="explore_more_pos">
-                    <div style="color: rgba(136, 226, 114, 1)">Read More</div>
-                    <div>
-                      <img src="./image/GreenCoin.png" class="height_120" />
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href="https://medium.com/rivera-money/rivera-liquidity-infrastructure-for-mantle-ab44ef2f39dc"
-                  target="_blank"
-                  class="swiper-slide explore_cards-each text-dark"
-                >
-                  <div>
-                    <h4 class="titleText" style="color: whitesmoke">
-                      Strategic partnership
-                    </h4>
-                  </div>
-                  <p>
-                    In the vastness of the decentralized financial universe, ...
-                  </p>
-                  <div class="explore_more_pos">
-                    <div style="color: rgba(136, 226, 114, 1)">Read More</div>
-                    <div>
-                      <img src="./image/GreenAtom.png" class="height_120" />
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <style>
       @media (max-width: 768px) {
         .explore_more {
@@ -642,97 +770,103 @@
           margin-bottom: 30px;
         }
       }
+      @media screen and (max-width: 380px) {
+        .features-section {
+          margin-top: 100px;
+        }
+      }
     </style>
 
     <!-- START SECTION MARKET MAKING-->
-    <section id="product">
-      <div class="custom-container">
-        <div
-          class="col-lg-9 col-md-9 mb_60"
-          style="margin-left: auto; margin-right: auto"
-        >
-          <h1
-            class="titleText"
-            style="
-              display: flex;
-              justify-content: center;
-              color: whitesmoke;
-              background-image: linear-gradient(
-                to bottom,
-                #ffffff 30.72%,
-                #999999 64.63%
-              );
-              -webkit-background-clip: text;
-              color: transparent;
-              font-size: 38px;
-            "
-          >
-            How it Works?
-          </h1>
-        </div>
-
-        <div class="line_text">
-          <div class="titleText">Deposit</div>
-          <div class="titleText">Borrow</div>
-          <div class="titleText">Earn</div>
-        </div>
-
-        <div class="line_aliment">
-          <div class="line_aliment_inner">
-            <div class="line_aliment_inner_circle"></div>
-
-            <div class="line_aliment_inner_circle"></div>
-            <div class="line_aliment_inner_circle"></div>
-          </div>
-        </div>
-
-        <div class="marketMakingBox">
+    <div>
+      <section id="product">
+        <div class="custom-containerr">
           <div
-            class="marketMakingInnerBox"
-            style="background-image: url(/assets/images/redBg.png)"
+            class="col-lg-9 col-md-9 mb_60"
+            style="margin-left: auto; margin-right: auto"
           >
-            <!-- <div class="redBox">Degens</div> -->
-            <img src="./exchange.png" style="margin-top: -15px" />
-            <div class="titleText" style="font-size: 24px; height: 30px">
-              Deposit supported collateral
-            </div>
-            <div class="popins_fnt" style="margin-top: 24px">
-              Use supported tokens as collateral to borrow funds.
-            </div>
-            <!-- <div class="mb-3"><button class="btn marketMakingBtn" disabled>Coming Soon</button></div> -->
+            <h1
+              class="titleText"
+              style="
+                display: flex;
+                justify-content: center;
+                color: whitesmoke;
+                background-image: linear-gradient(
+                  to bottom,
+                  #ffffff 30.72%,
+                  #999999 64.63%
+                );
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: 38px;
+              "
+            >
+              How it Works?
+            </h1>
           </div>
-          <div
-            class="marketMakingInnerBox"
-            style="background-image: url(/assets/images/yellowBg.png)"
-          >
-            <!-- <div class="yellowBox">Institutions</div> -->
-            <img src="./coin.png" style="margin-top: -10px" />
-            <div class="titleText" style="height: 30px; font-size: 24px">
-              Borrow $CoreUSD interest-free
+
+          <div class="custom_line_container">
+            <!-- Line behind circles -->
+            <div class="custom_line"></div>
+
+            <div class="custom_line_text">
+              <div class="custom_line_box">
+                <div class="custom_titleText">Deposit</div>
+                <div class="custom_circle"></div>
+              </div>
+              <div class="custom_line_box">
+                <div class="custom_titleText">Borrow</div>
+                <div class="custom_circle"></div>
+              </div>
+              <div class="custom_line_box">
+                <div class="custom_titleText">Earn</div>
+                <div class="custom_circle"></div>
+              </div>
             </div>
-            <div class="popins_fnt" style="margin-top: 24px">
-              Mint $CUSD without incurring ongoing interest charges.
-            </div>
-            <!-- <div class="mb-3"><button class="btn marketMakingBtn marketMakingBtnHvr" onclick="window.open('https://app.rivera.money/', '_blank')">Invest Now</button></div> -->
           </div>
-          <div
-            class="marketMakingInnerBox"
-            style="background-image: url(/assets/images/greenBg.png)"
-          >
-            <!-- <div class="greenBox">Conservative</div> -->
-            <img src="./geenbtc.png" style="margin-top: -10px" />
-            <div class="titleText" style="height: 50px; font-size: 24px">
-              Earn
+
+          <div class="marketMakingBox">
+            <div
+              class="marketMakingInnerBox"
+              style="background-image: url(./image/Rectangle\ 6.png)"
+            >
+              <img src="./exchange.png" style="margin-top: -15px" />
+              <div class="titleText" style="font-size: 24px; height: 30px">
+                Deposit supported collateral
+              </div>
+              <div class="popins_fnt" style="margin-top: 50px">
+                Use supported tokens as collateral to borrow funds.
+              </div>
             </div>
-            <div class="popins_fnt">
-              Explore yield opportunities for $CUSD throughout the ecosystem, or
-              take part in liquidations on CoreUSD to earn rewards.
+            <div
+              class="marketMakingInnerBox"
+              style="background-image: url(./image/Rectangle\ 6.png)"
+            >
+              <img src="./coin.png" style="margin-top: -10px" />
+              <div class="titleText" style="height: 30px; font-size: 24px">
+                Borrow $CoreUSD interest-free
+              </div>
+              <div class="popins_fnt" style="margin-top: 50px">
+                Mint $CUSD without incurring ongoing interest charges.
+              </div>
             </div>
-            <!-- <div class="mb-3"><button class="btn marketMakingBtn marketMakingBtnHvr" onclick="window.open('https://app.rivera.money/', '_blank')">Invest Now</button></div> -->
+            <div
+              class="marketMakingInnerBox"
+              style="background-image: url(./image/Rectangle\ 6.png)"
+            >
+              <img src="./geenbtc.png" style="margin-top: -10px" />
+              <div class="titleText" style="height: 50px; font-size: 24px">
+                Earn
+              </div>
+              <div class="popins_fnt">
+                Explore yield opportunities for $CUSD throughout the ecosystem,
+                or take part in liquidations on CoreUSD to earn rewards.
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <!-- END SECTION MARKET MAKING -->
     <!--- PRE MINE PROGRAM START-->
     <!--       
@@ -762,6 +896,7 @@
             -webkit-background-clip: text;
             color: transparent;
             font-size: 38px;
+            border-color: #ffffff4a;
           "
         >
           Borrow $CoreUSD with Confidence
@@ -778,8 +913,9 @@
             <img
               src="./image/greenDoCoin.png"
               class="wdth_height_90 mb-3 mt-2"
+              style="font-size: 24px"
             />
-            <div class="update_header_font mb-2 mt-3 fnt_600">
+            <div class="titleText mb-2 mt-3" style="font-size: 24px">
               DeFi Composable Positions
             </div>
             <div class="lh_1 marketMakingSubHeader mb-3 mt-3 fnt_wght_100">
@@ -792,7 +928,7 @@
               src="./image/Greensetting.png"
               class="wdth_height_90 mb-3 mt-2"
             />
-            <div class="update_header_font mb-2 mt-3 fnt_600">
+            <div class="titleText mb-2 mt-3" style="font-size: 24px">
               Passive LP Expereince
             </div>
             <div class="lh_1 marketMakingSubHeader mb-3 mt-3 fnt_wght_100">
@@ -805,7 +941,7 @@
               src="./image/GreenDollar.png"
               class="wdth_height_90 mb-3 mt-2"
             />
-            <div class="update_header_font mb-2 mt-3 fnt_600">
+            <div class="titleText mb-2 mt-3" style="font-size: 24px">
               Liquidity Mining Programs
             </div>
             <div class="lh_1 marketMakingSubHeader mb-3 mt-3 fnt_wght_100">
@@ -817,7 +953,7 @@
         <div class="marketMakingBox1">
           <div class="marketMakingInnerBoxConcentrated grayy_bg">
             <img src="./image/DollarBtc.png" class="wdth_height_90 mb-3 mt-2" />
-            <div class="update_header_font mb-2 mt-3 fnt_600">
+            <div class="titleText mb-2 mt-3" style="font-size: 24px">
               Passive LP Expereince
             </div>
             <div class="lh_1 marketMakingSubHeader mb-3 mt-3 fnt_wght_100">
@@ -830,7 +966,7 @@
               src="./image/mantoBtctoman.png"
               class="wdth_height_90 mb-3 mt-2"
             />
-            <div class="update_header_font mb-2 mt-3 fnt_600">
+            <div class="titleText mb-2 mt-3" style="font-size: 24px">
               Liquidity Mining Programs
             </div>
             <div class="lh_1 marketMakingSubHeader mb-3 mt-3 fnt_wght_100">
@@ -1039,44 +1175,9 @@
 
       <section>
         <div class="ProtocolTo">
-          <!-- <h1 style="text-align: center;position: relative;top: 50px; background-color: red;">hello</h1> -->
-          <div
-            style="
-              height: 50vh;
-              width: 40vw;
-              position: relative;
-              left: 40%;
-              top: 10%;
-            "
-          >
-            <div style="height: 14vh; width: 20vw">
-              <h1
-                class="titleText"
-                style="
-                  text-align: center;
-                  color: whitesmoke;
-                  background-image: linear-gradient(
-                    to bottom,
-                    #ffffff 30.72%,
-                    #999999 64.63%
-                  );
-                  -webkit-background-clip: text;
-                  color: transparent;
-                "
-              >
-                Our Protocol Token
-              </h1>
-            </div>
-            <div
-              class="popins_fnt"
-              style="
-                height: 20vh;
-                width: 25vw;
-                position: relative;
-                top: 20px;
-                left: -30px;
-              "
-            >
+          <div class="text-container">
+            <h1 class="titleText">Our Protocol Token</h1>
+            <div class="popins_fnt">
               <p style="text-align: center">
                 $EARTH is the native token and earns a portion of the fees
                 generated by the protocol.
@@ -1094,10 +1195,59 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover; /* Ensures the image is fully visible without stretching */
+          display: flex; /* Use flexbox to center content */
+          justify-content: center; /* Center horizontally */
+          align-items: center; /* Center vertically */
+          padding: 20px; /* Add some padding for better spacing */
         }
+
+        .text-container {
+          text-align: center; /* Center the text */
+          max-width: 90%; /* Limit the width for better readability on mobile */
+          color: whitesmoke; /* Text color */
+          margin-top: -500px;
+        }
+
+        .titleText {
+          background-image: linear-gradient(
+            to bottom,
+            #ffffff 30.72%,
+            #999999 64.63%
+          );
+          -webkit-background-clip: text;
+          color: transparent;
+          font-size: 3em; /* Set a base font size */
+        }
+
+        .popins_fnt {
+          margin-top: 20px; /* Space between the title and paragraph */
+          font-size: 1.2em; /* Set a base font size */
+        }
+
         @media (max-width: 768px) {
           .ProtocolTo {
-            display: none;
+            background-image: url("./iPhone\ 14\ &\ 15\ Pro\ -\ 1.png");
+            background-size: contain;
+            height: 50vh;
+          }
+          .titleText {
+            font-size: 2.5em; /* Adjust font size for mobile */
+          }
+          .text-container {
+            margin-top: -150px;
+          }
+          .popins_fnt {
+            font-size: 1em; /* Adjust paragraph font size for mobile */
+          }
+        }
+
+        @media (max-width: 480px) {
+          .titleText {
+            font-size: 2.5em; /* Further adjust font size for smaller screens */
+          }
+
+          .popins_fnt {
+            font-size: 0.9em; /* Further adjust paragraph font size for smaller screens */
           }
         }
       </style>
@@ -1208,7 +1358,7 @@
         <div class="rightglow">
           <div class="content">
             <h1
-              class="titleText"
+              class="titleText fontstyle"
               style="
                 background-image: linear-gradient(
                   to bottom,
@@ -1237,6 +1387,9 @@
       </div>
 
       <style>
+        .fontstyle {
+          font-size: 38px;
+        }
         .polymore {
           /* background-image: url("/api/placeholder/1920/1080"); */
           background-image: url("geenMan.png"); /* Adjust to your correct path */
@@ -1279,6 +1432,7 @@
         .buttons {
           display: flex;
           gap: 20px;
+          margin-left: 30px;
         }
 
         .nitubtn {
@@ -1300,6 +1454,7 @@
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
           .polymore {
+            background-image: url("./iPhone\ 14\ &\ 15\ Pro\ -\ 2.png");
             background-size: cover;
             background-position: center;
             justify-content: center;
@@ -1307,7 +1462,9 @@
             text-align: center;
             margin-bottom: 0px;
           }
-
+          .fontstyle {
+            font-size: 30px;
+          }
           .rightglow {
             width: 100%;
             padding: 0 20px;
@@ -1318,9 +1475,9 @@
             padding: 20px;
           }
 
-          .content h1 {
+          /* .content h1 {
             font-size: 2em;
-          }
+          } */
 
           .content p {
             font-size: 1em;
@@ -1339,19 +1496,31 @@
 
         /* Additional adjustments for even smaller screens */
         @media (max-width: 480px) {
-          .content h1 {
-            font-size: 1.75em;
+          .polymore {
+            background-size: cover; /* Make sure the image covers the area for small screens */
+            background-position: center;
+            height: 550px; /* Allow the height to adjust based on the content */
           }
 
+          /* .content h1 {
+            font-size: 1.75em;
+          } */
+          .content {
+            margin-top: -100px;
+          }
           .buttons {
-            flex-direction: column;
+            flex-direction: row;
             gap: 10px;
+            margin-left: 0px;
           }
 
           .nitubtn {
             width: 100%;
-            max-width: 200px;
+            max-width: 150px;
             margin: 0 auto;
+          }
+          .content h1 {
+            font-size: 2.5em;
           }
         }
       </style>
@@ -1581,38 +1750,18 @@
       </section> -->
       <!-- END SECTION SERVICES -->
 
+      <!-- START FOOTER SECTION -->
+
       <div class="faq-container">
         <div class="faq-flex-container">
           <div class="faq-header">
-            <h1
-              class="titleText"
-              style="
-                background-image: linear-gradient(
-                  to bottom,
-                  #ffffff 30.72%,
-                  #999999 64.63%
-                );
-                -webkit-background-clip: text;
-                color: transparent;
-                font-weight: 200;
-                font-size: 38px;
-              "
-            >
+            <h1 class="titleText">
               Explore our FAQ for swift answers to your questions.
             </h1>
-            <!-- <h1 class="titleText" style="background-image: linear-gradient(to bottom, #FFFFFF 30.72%, #999999 64.63%);
-            -webkit-background-clip: text;
-            color: transparent;
-            font-weight: 200; 
-            font-size: 38px;">for swift answers to </h1>
-            <h1 class="titleText" style="background-image: linear-gradient(to bottom, #FFFFFF 30.72%, #999999 64.63%);
-            -webkit-background-clip: text;
-            color: transparent;
-            font-weight: 200; 
-            font-size: 38px;">your questions.</h1>-->
           </div>
 
           <div class="faq-content">
+            <!-- FAQ items here (kept same as original) -->
             <div class="faq-item">
               <div class="faq-question" onclick="toggleFAQ(this.parentElement)">
                 <h2>What is Earth Protocol?</h2>
@@ -1627,64 +1776,60 @@
                 </p>
               </div>
             </div>
-
             <div class="faq-item">
               <div class="faq-question" onclick="toggleFAQ(this.parentElement)">
-                <h2>How can I benefit from using $CoreUSD?</h2>
+                <h2>What is Earth Protocol?</h2>
                 <div class="toggle-btn">+</div>
               </div>
               <div class="faq-answer">
                 <p>
-                  $CoreUSD offers stability, security, and seamless integration
-                  with the Earth Protocol ecosystem. Users can enjoy low
-                  transaction fees, fast settlements, and participate in various
-                  DeFi activities.
+                  Earth Protocol is an innovative blockchain solution designed
+                  to revolutionize decentralized finance. It provides secure,
+                  efficient, and sustainable financial services while
+                  prioritizing environmental consciousness.
                 </p>
               </div>
             </div>
-
             <div class="faq-item">
               <div class="faq-question" onclick="toggleFAQ(this.parentElement)">
-                <h2>What is $CoreUSD?</h2>
+                <h2>What is Earth Protocol?</h2>
                 <div class="toggle-btn">+</div>
               </div>
               <div class="faq-answer">
                 <p>
-                  $CoreUSD is a stablecoin within the Earth Protocol ecosystem,
-                  designed to maintain a 1:1 peg with the US Dollar. It enables
-                  users to transact and store value with minimal volatility.
+                  Earth Protocol is an innovative blockchain solution designed
+                  to revolutionize decentralized finance. It provides secure,
+                  efficient, and sustainable financial services while
+                  prioritizing environmental consciousness.
                 </p>
               </div>
             </div>
-
             <div class="faq-item">
               <div class="faq-question" onclick="toggleFAQ(this.parentElement)">
-                <h2>Do you have a token?</h2>
+                <h2>What is Earth Protocol?</h2>
                 <div class="toggle-btn">+</div>
               </div>
               <div class="faq-answer">
                 <p>
-                  Yes, the Earth Protocol has its native token, $EARTH, which
-                  serves as the governance token for the protocol and enables
-                  holders to participate in decision-making processes.
+                  Earth Protocol is an innovative blockchain solution designed
+                  to revolutionize decentralized finance. It provides secure,
+                  efficient, and sustainable financial services while
+                  prioritizing environmental consciousness.
                 </p>
               </div>
             </div>
+            <!-- More FAQ items -->
           </div>
         </div>
       </div>
-
       <style>
         .faq-container {
-          /* max-width: 1200px; */
-          width: full;
+          width: 100%;
           margin: 0 auto;
-          /* padding: 100px 80px ; */
-          padding: 40px 80px;
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-            Roboto, sans-serif;
+          padding: 100px 80px 40px;
           color: #ffffff;
           background-color: #1a1a1a;
+          position: relative;
         }
 
         .faq-flex-container {
@@ -1694,24 +1839,32 @@
 
         .faq-header {
           flex: 1;
-          position: sticky;
+
           top: 40px;
           height: fit-content;
+
+          background-color: #1a1a1a;
+          padding: 20px 0;
         }
 
         .faq-header h1 {
-          font-size: 2.5rem;
-          margin-bottom: 10px;
+          font-size: 38px;
+          font-weight: 200;
           line-height: 1.2;
-        }
-
-        .faq-header p {
-          font-size: 1.2rem;
-          color: #888888;
+          background-image: linear-gradient(
+            to bottom,
+            #ffffff 30.72%,
+            #999999 64.63%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
         }
 
         .faq-content {
           flex: 1.5;
+          position: relative;
+          z-index: 1;
         }
 
         .faq-item {
@@ -1727,16 +1880,15 @@
           justify-content: space-between;
           align-items: center;
           transition: background-color 0.3s;
-        }
-
-        .faq-question:hover {
-          background-color: #333333;
+          gap: 10px;
+          flex-wrap: nowrap;
         }
 
         .faq-question h2 {
           margin: 0;
           font-size: 1.1rem;
           font-weight: 500;
+          flex: 1;
         }
 
         .toggle-btn {
@@ -1750,6 +1902,7 @@
           font-size: 18px;
           color: white;
           transition: transform 0.3s;
+          flex-shrink: 0;
         }
 
         .faq-answer {
@@ -1770,23 +1923,23 @@
 
         @media (max-width: 968px) {
           .faq-container {
-            padding-top: 40px;
+            padding: 40px 20px;
           }
+
           .faq-flex-container {
             flex-direction: column;
             gap: 30px;
           }
 
           .faq-header {
+            position: relative;
+            top: 0;
             text-align: center;
+            padding: 0;
           }
 
           .faq-header h1 {
             font-size: 2rem;
-          }
-
-          .faq-header p {
-            font-size: 1rem;
           }
         }
 
@@ -1804,9 +1957,7 @@
           }
         }
       </style>
-
-      <!-- START FOOTER SECTION -->
-      <footer style="margin-top: 50px">
+      <footer style="margin-top: 50px; clear: both">
         <div class="top_footer bg_light_dark">
           <div class="custom-container-footer">
             <div class="text-center style="margin-bottom: 40px;">
@@ -1921,13 +2072,13 @@
                         up.
                       </h6>
                       <!-- <div style="text-align: center;">
-                            <button id="newsLttrDn" class="btn btn-default mx-auto" type="submit" style="border: none;
-                           
-                            background-color: #269F90;
-                            width: 36%;">
-                                Okay
-                            </button>
-                        </div> -->
+                        <button id="newsLttrDn" class="btn btn-default mx-auto" type="submit" style="border: none;
+                       
+                        background-color: #269F90;
+                        width: 36%;">
+                            Okay
+                        </button>
+                    </div> -->
                     </div>
                   </div>
                 </div>
@@ -1936,7 +2087,6 @@
           </div>
         </div>
       </footer>
-
       <div id="cookieConsent">
         <div id="closeCookieConsent">x</div>
         This website is using cookies.
@@ -2185,6 +2335,7 @@
           document.querySelector(".flexBanner").style.display = "none";
         }
       </script>
+
       <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
       <!-- <script src="assets/js/mouseleave.js"></script> -->
     </div>

@@ -22,8 +22,11 @@
 .brdr2b {
   border: 1px solid black;
 }
-
-.line_text {
+.buttonnitu {
+  display: flex;
+  gap: 20px;
+}
+/* .line_text {
   display: flex;
   justify-content: space-around;
   position: relative;
@@ -42,7 +45,7 @@
 .line_aliment_inner {
   height: 5vh;
   width: 81.5vw;
-  /* border: 1px solid white; */
+  
   position: relative;
   bottom: 2vh;
   display: flex;
@@ -62,4 +65,117 @@
   .line_aliment {
     display: none;
   }
+} */
+.custom-containerr {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.titleText {
+  font-family: "SubjectivityBold";
+  text-align: center;
+}
+
+.popins_fnt {
+  font-family: "Poppins";
+  text-align: center;
+  margin-top: 12px;
+}
+
+.marketMakingBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.marketMakingInnerBox {
+  width: 30%;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.marketMakingInnerBox img {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+/* Custom classes for the text and circle structure */
+.custom_line_container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.custom_line {
+  width: 100%;
+  height: 10px;
+  background-color: #8ad86c;
+  position: absolute;
+
+  top: 82%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+}
+
+.custom_line_text {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.custom_line_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1; /* Ensures the circles are on top of the line */
+}
+
+.custom_titleText {
+  font-family: "SubjectivityBold";
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.custom_circle {
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  background-color: black;
+  border: 5px solid #8ad86c;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .marketMakingInnerBox {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .custom-containerr {
+    margin-top: 100px 0px 0px 0px;
+  }
+  .custom_line_text {
+    display: none;
+  }
+  .custom_line {
+    display: none;
+  }
+}
+.blurred-background {
+  position: absolute; /* Position it absolutely to fill the parent */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  right: 0; /* Align to right */
+  bottom: 0; /* Align to bottom */
+  background-image: url(./image/earth-image.png); /* Use your desired background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Cover the entire area */
+  filter: blur(15px); /* Adjust the blur intensity */
+  z-index: -1; /* Send it behind other content */
 }
